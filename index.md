@@ -1,3 +1,13 @@
+<div style="text-align: center;">
+    [<img src="https://cdn-icons-png.flaticon.com/512/25/25694.png" alt="" width="50">](https://mervy.github.io/js-dom/) |
+    [<img src="https://exemplo.com/icone-exercicios.png" alt="" width="50">](pag1.md) |
+    [<img src="https://exemplo.com/icone-trabalho.png" alt="" width="50">](pag2.md)
+</div>
+
+[Home (Index)](index.md) | [Exercícios](pag1.md) | [Trabalho](pag2.md)
+
+
+
 
 <div align="center">
 
