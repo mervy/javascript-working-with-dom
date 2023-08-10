@@ -1,3 +1,5 @@
+[<img src="https://cdn-icons-png.flaticon.com/512/25/25694.png" alt="" width="50" align="center">](https://mervy.github.io/js-dom/)   [<img  src="https://icons.veryicon.com/png/o/business/monochrome-financial-and-business-icons/to-work-in-an-office-2.png"  alt=""  width="50" align="center">](https://mervy.github.io/pages/exercises1) [<img  src="https://static.thenounproject.com/png/94973-200.png"  alt=""  width="50" align="center">](https://mervy.github.io/pages/exercises2) [<img  src="https://icons.veryicon.com/png/o/business/monochrome-financial-and-business-icons/to-work-in-an-office-2.png"  alt=""  width="50" align="center">](https://mervy.github.io/pages/exercises3)
+
 ## Exercícios
 
 1. Tendo o calendário abaixo (só começo do código), faça os exercicios a seguir:
