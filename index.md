@@ -1,11 +1,11 @@
-[Ícone Casa](https://cdn-icons-png.flaticon.com/512/25/25694.png)](https://mervy.github.io/js-dom/) | 
-[![Ícone Exercícios](https://cdn-icons-png.flaticon.com/512/3774/3774905.png)](pages/exercises1) | 
-[![Ícone Trabalho](https://icons.veryicon.com/png/o/business/monochrome-financial-and-business-icons/to-work-in-an-office-2.png)](pages/exercises1)
+
+<div align="center">
 
 [<img src="https://cdn-icons-png.flaticon.com/512/25/25694.png" alt="" width="50">](https://mervy.github.io/js-dom/) | 
-[<img src="https://icons.veryicon.com/png/o/business/monochrome-financial-and-business-icons/to-work-in-an-office-2.png" alt="" width="50">](pages/exercises1) | 
-[<img src="https://static.thenounproject.com/png/94973-200.png" alt="" width="50">](pages/exercises2)
+[<img src="https://icons.veryicon.com/png/o/business/monochrome-financial-and-business-icons/to-work-in-an-office-2.png" alt="" width="50">](https://mervy.github.io/pages/exercises1) | 
+[<img src="https://static.thenounproject.com/png/94973-200.png" alt="" width="50">](https://mervy.github.io/pages/exercises2)
 
+</div>
 
 
 # Plano de estudos Javascript Puro - Manipulando o DOM 
