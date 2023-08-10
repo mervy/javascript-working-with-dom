@@ -1,2 +1,2 @@
-# js-dom
+# Javascript - Introdução ao DOM
 Introdução ao DOM
