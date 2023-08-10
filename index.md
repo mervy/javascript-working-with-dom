@@ -3,14 +3,15 @@
     [<img src="https://static.thenounproject.com/png/94973-200.png" alt="" width="50">](https://mervy.github.io/pages/exercises2) |
     [<img src="https://icons.veryicon.com/png/o/business/monochrome-financial-and-business-icons/to-work-in-an-office-2.png" alt="" width="50">](https://mervy.github.io/pages/exercises3)
 
-<div style="display: flex; justify-content: center;">
+<!-- Centralize icons and links -->
 
-    [<img src="https://cdn-icons-png.flaticon.com/512/25/25694.png" alt="" width="50">](https://mervy.github.io/js-dom/) | 
-    [<img src="https://icons.veryicon.com/png/o/business/monochrome-financial-and-business-icons/to-work-in-an-office-2.png" alt="" width="50">](https://mervy.github.io/pages/exercises1) | 
-    [<img src="https://static.thenounproject.com/png/94973-200.png" alt="" width="50">](https://mervy.github.io/pages/exercises2) |
-    [<img src="https://icons.veryicon.com/png/o/business/monochrome-financial-and-business-icons/to-work-in-an-office-2.png" alt="" width="50">](https://mervy.github.io/pages/exercises3)
+| **Icon** | **Link** |
+|---|---|
+| <img src="https://cdn-icons-png.flaticon.com/512/25/25694.png" alt="" width="50"> | [JavaScript DOM](https://mervy.github.io/js-dom/) |
+| <img src="https://icons.veryicon.com/png/o/business/monochrome-financial-and-business-icons/to-work-in-an-office-2.png" alt="" width="50"> | [Exercises 1](https://mervy.github.io/pages/exercises1) |
+| <img src="https://static.thenounproject.com/png/94973-200.png" alt="" width="50"> | [Exercises 2](https://mervy.github.io/pages/exercises2) |
+| <img src="https://icons.veryicon.com/png/o/business/monochrome-financial-and-business-icons/to-work-in-an-office-2.png" alt="" width="50"> | [Exercises 3](https://mervy.github.io/pages/exercises3) |
 
-</div>
 
 
 
