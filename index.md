@@ -1,5 +1,9 @@
+[![Ícone Casa](https://cdn-icons-png.flaticon.com/512/25/25694.png)](index.md) | [![Ícone Exercícios](https://cdn-icons-png.flaticon.com/512/3774/3774905.png)](pages/exercises1) | [![Ícone Trabalho](https://icons.veryicon.com/png/o/business/monochrome-financial-and-business-icons/to-work-in-an-office-2.png)](pages/exercises1)
+
+[Home (Index)](index.md) | [Exercícios 1](pages/exercises1) | [Exercícios 2](pages/exercises1)
+
 # Plano de estudos Javascript Puro - Manipulando o DOM 
-!(https://usemynotes.com/wp-content/uploads/2021/07/dom-in-js.jpg)
+![JS](https://usemynotes.com/wp-content/uploads/2021/07/dom-in-js.jpg)
 
 Desenvolver um entendimento sólido e abrangente de JavaScript puro, especialmente em relação à manipulação do DOM, é um ótimo objetivo! Aqui está um plano de estudos que mistura diferentes tópicos e habilidades relacionados a JavaScript para ajudá-lo a alcançar essa meta:
 
