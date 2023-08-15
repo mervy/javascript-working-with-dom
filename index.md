@@ -1,4 +1,4 @@
-<img src="javascript-logo.png" alt="JS logo" style="width:100px;"/> 
+<img src="javascript-logo.png" alt="JS logo" style="height:70px;"/> 
 | [Home](https://mervy.github.io/javascript-working-with-dom) 
 | [Exercises 01](https://mervy.github.io/javascript-working-with-dom/pages/exercises1) 
 | [Exercises 02](https://mervy.github.io/javascript-working-with-dom/pages/exercises2) 
@@ -53,55 +53,11 @@ Lembre-se de praticar regularmente, fazer exercícios e projetos práticos, e bu
 
 !(https://frontendblog.com.br/wp-content/uploads/2023/04/0_dcpjTwj_qSjTdaUc.jpg)
 
-## Selecting Elements with CSS
-User
-Selecting Elements
-document.querySelector(selector) – selects the first element that matches the CSS selector.
-ChatGPT
-You are correct. The `document.querySelector(selector)` method is a part of the Document Object Model (DOM) API in JavaScript. It allows you to select the first element in the document that matches the specified CSS selector. Here's a brief explanation of how it works:
+# Selecting Elements with CSS
 
-1. **document**: This refers to the entire HTML document loaded in the browser.
+## document.querySelector(seletor)
 
-2. **querySelector(selector)**: This method takes a CSS selector as an argument. The selector is used to target specific elements in the HTML document.
-
-3. **returns**: The method returns the first element that matches the given selector. If no matching element is found, it returns `null`.
-
-Here's an example of how you might use it:
-
-```javascript
-// Assuming you have the following HTML structure
-/*
-<div id="myDiv">
-  <p class="myParagraph">Hello, World!</p>
-</div>
-*/
-
-// Select the first element with the class "myParagraph"
-const paragraph = document.querySelector('.myParagraph');
-
-// Select the first element with the ID "myDiv"
-const div = document.querySelector('#myDiv');
-```
-
-In this example, `paragraph` will reference the `<p>` element with the class `myParagraph`, and `div` will reference the `<div>` element with the ID `myDiv`.
-
-It's worth noting that if you want to select all elements that match a selector (not just the first one), you would use `document.querySelectorAll(selector)`. This method returns a NodeList containing all matching elements, which you can iterate through to access each element.
-
-```javascript
-// Select all elements with the class "myParagraph"
-const paragraphs = document.querySelectorAll('.myParagraph');
-
-// Loop through each paragraph element
-paragraphs.forEach(paragraph => {
-  // Do something with each paragraph element
-});
-```
-
-Keep in mind that both `querySelector` and `querySelectorAll` are powerful tools for selecting and manipulating elements on a webpage using JavaScript. They provide a convenient way to interact with the DOM and perform various actions based on element selection.
-User
-Refaça, em português
-ChatGPT
-Claro! O método `document.querySelector(seletor)` faz parte da API Document Object Model (DOM) em JavaScript. Ele permite selecionar o primeiro elemento no documento que corresponde ao seletor CSS especificado. Aqui está uma breve explicação de como ele funciona:
+O método `document.querySelector(seletor)` faz parte da API Document Object Model (DOM) em JavaScript. Ele permite selecionar o primeiro elemento no documento que corresponde ao seletor CSS especificado. Aqui está uma breve explicação de como ele funciona:
 
 1. **document**: Isso se refere a todo o documento HTML carregado no navegador.
 
@@ -141,10 +97,8 @@ paragrafos.forEach(paragrafo => {
 ```
 
 Lembre-se de que tanto `querySelector` quanto `querySelectorAll` são ferramentas poderosas para selecionar e manipular elementos em uma página da web usando JavaScript. Eles fornecem uma maneira conveniente de interagir com o DOM e realizar várias ações com base na seleção de elementos.
-User
-Mostre mais códigos e exemplos
-ChatGPT
-Claro! Vou fornecer mais exemplos de código para ilustrar como você pode usar o método `document.querySelector` em várias situações.
+
+Vou fornecer mais exemplos de código para ilustrar como você pode usar o método `document.querySelector` em várias situações.
 
 Exemplo 1: Selecionar um elemento pelo ID e modificar seu conteúdo:
 
@@ -222,48 +176,9 @@ Exemplo 3: Selecionar todos os elementos de uma determinada classe e aplicar uma
 ```
 
 Estes exemplos ilustram diferentes maneiras de usar `document.querySelector` para selecionar elementos e realizar ações sobre eles. Lembre-se de que o método `querySelector` oferece muita flexibilidade para interagir com o DOM e manipular elementos em sua página da web.
-User
-document.querySelectorAll(selector) – selects all elements that match the CSS selector.
-ChatGPT
-Exactly! The `document.querySelectorAll(selector)` method is used to select all elements in the document that match the specified CSS selector. It returns a NodeList, which is a collection of all the matching elements. Here's a breakdown of how it works:
 
-1. **document**: Refers to the entire HTML document loaded in the browser.
+## document.querySelectorAll(selector)
 
-2. **querySelectorAll(selector)**: This method takes a CSS selector as an argument, just like `document.querySelector`. The selector is used to target specific elements in the HTML document.
-
-3. **returns**: The method returns a NodeList containing all elements that match the given selector. If no matching elements are found, it returns an empty NodeList.
-
-Here's an example of how you might use it:
-
-```javascript
-// Assuming you have the following HTML structure
-/*
-<ul id="myList">
-  <li>Item 1</li>
-  <li>Item 2</li>
-  <li>Item 3</li>
-</ul>
-*/
-
-// Select all <li> elements within the <ul> element
-const listItems = document.querySelectorAll('#myList li');
-
-// Loop through each list item and modify the text content
-listItems.forEach((item, index) => {
-  item.textContent = `New Item ${index + 1}`;
-});
-```
-
-In this example, `listItems` will contain a NodeList of all `<li>` elements within the `<ul>` element with the ID `myList`. You can then use the `forEach` method to iterate through the NodeList and perform actions on each individual element.
-
-The `document.querySelectorAll` method is particularly useful when you want to apply changes or actions to multiple elements that share a common CSS selector, such as styling, content modification, or event binding.
-User
-vou por em inglês, aí me responda em português 
-ChatGPT
-Sure, feel free to write in English, and I'll respond in Portuguese. Go ahead!
-User
-document.querySelectorAll(selector) – selects all elements that match the CSS selector.
-ChatGPT
 Exatamente! O método `document.querySelectorAll(selector)` é usado para selecionar todos os elementos no documento que correspondem ao seletor CSS especificado. Ele retorna um NodeList, que é uma coleção de todos os elementos correspondentes. Aqui está uma explicação de como ele funciona:
 
 1. **document**: Refere-se a todo o documento HTML carregado no navegador.
@@ -298,7 +213,7 @@ Neste exemplo, `listItems` conterá um NodeList de todos os elementos `<li>` den
 O método `document.querySelectorAll` é especialmente útil quando você deseja aplicar alterações ou ações a vários elementos que compartilham um seletor CSS comum, como estilização, modificação de conteúdo ou vinculação de eventos.
 User
 Mais exemplos e códigos por favor, pelo menos 5 diversos
-ChatGPT
+
 Claro! Aqui estão cinco exemplos diferentes de uso do método `document.querySelectorAll` para selecionar elementos e realizar ações neles:
 
 Exemplo 1: Alterar a cor de fundo de todos os elementos de uma determinada classe:
@@ -379,9 +294,9 @@ images.forEach(image => {
 ```
 
 Esses exemplos demonstram várias maneiras pelas quais o método `document.querySelectorAll` pode ser usado para selecionar e interagir com elementos em uma página da web. Lembre-se de que essa função é uma ferramenta poderosa para manipular o DOM e realizar ações em vários elementos de uma só vez.
-User
-document.getElementById(id) – selects the element with the specified ID. (em portugues a resposta)
-ChatGPT
+
+## document.getElementById(id) 
+
 O método `document.getElementById(id)` é usado para selecionar o elemento com o ID especificado. Ele retorna o elemento correspondente ou `null` se nenhum elemento com o ID fornecido for encontrado. Esse método é uma forma direta e eficaz de selecionar um único elemento pela sua identificação única. Aqui está uma explicação em português:
 
 1. **document**: Refere-se ao documento HTML carregado no navegador.
@@ -417,10 +332,8 @@ Aqui está um exemplo de uso:
 Neste exemplo, `divElement` referenciará o elemento `<div>` com o ID `meuDiv`, e seu conteúdo será alterado por meio da propriedade `innerHTML`.
 
 Lembre-se de que o `getElementById` é útil para selecionar elementos específicos quando você tem a certeza de que o ID é exclusivo. Se você precisar selecionar vários elementos ou elementos que compartilham uma classe, seria mais adequado usar `querySelector` ou `querySelectorAll`.
-User
-Mais exemplos e códigos por favor, pelo menos 5 diversos
-ChatGPT
-Claro! Aqui estão cinco exemplos diferentes de uso do método `document.getElementById` para selecionar elementos pelo ID:
+
+Aqui estão cinco exemplos diferentes de uso do método `document.getElementById` para selecionar elementos pelo ID:
 
 Exemplo 1: Alterar o texto de um elemento pelo ID:
 
@@ -535,43 +448,10 @@ Exemplo 5: Ocultar um elemento pelo ID:
 ```
 
 Esses exemplos mostram várias maneiras de usar o método `document.getElementById` para selecionar elementos pelo ID e realizar ações neles. O método é útil para selecionar elementos individuais que possuem um ID exclusivo.
-User
-document.getElementsByClassName(className) – selects all elements with the specified class name.
-ChatGPT
-Exactly! The `document.getElementsByClassName(className)` method is used to select all elements in the document that have the specified class name. It returns a live HTMLCollection, which is a collection of all the matching elements. Here's an explanation of how it works:
 
-1. **document**: Refers to the entire HTML document loaded in the browser.
+## document.getElementsByClassName(className)
 
-2. **getElementsByClassName(className)**: This method takes a class name as an argument. The class name is used to target elements with that specific class in the HTML document.
-
-3. **returns**: The method returns a live HTMLCollection containing all elements that have the given class name.
-
-Here's an example of how you might use it:
-
-```javascript
-// Assuming you have the following HTML structure
-/*
-<div class="highlight">Element 1</div>
-<div class="highlight">Element 2</div>
-<div class="highlight">Element 3</div>
-*/
-
-// Select all elements with the class "highlight"
-const highlightedElements = document.getElementsByClassName('highlight');
-
-// Loop through each highlighted element and modify the text content
-for (let i = 0; i < highlightedElements.length; i++) {
-  highlightedElements[i].textContent = `New Element ${i + 1}`;
-}
-```
-
-In this example, `highlightedElements` will contain an HTMLCollection of all `<div>` elements with the class `highlight`. You can then use a loop to iterate through the collection and perform actions on each individual element.
-
-It's important to note that the HTMLCollection returned by `getElementsByClassName` is live, which means it's automatically updated as elements are added or removed from the DOM. This can be both advantageous and potentially unexpected, depending on your use case.
-User
-em portugues
-ChatGPT
-Exatamente! O método `document.getElementsByClassName(className)` é usado para selecionar todos os elementos no documento que possuem o nome da classe especificado. Ele retorna uma HTMLCollection ao vivo, que é uma coleção de todos os elementos correspondentes. Aqui está uma explicação de como ele funciona:
+O método `document.getElementsByClassName(className)` é usado para selecionar todos os elementos no documento que possuem o nome da classe especificado. Ele retorna uma HTMLCollection ao vivo, que é uma coleção de todos os elementos correspondentes. Aqui está uma explicação de como ele funciona:
 
 1. **document**: Refere-se a todo o documento HTML carregado no navegador.
 
@@ -601,10 +481,8 @@ for (let i = 0; i < elementosDestacados.length; i++) {
 Neste exemplo, `elementosDestacados` conterá uma HTMLCollection de todos os elementos `<div>` com a classe `destaque`. Você pode usar um loop para percorrer a coleção e realizar ações em cada elemento individual.
 
 É importante observar que a HTMLCollection retornada pelo `getElementsByClassName` é ao vivo, o que significa que ela é automaticamente atualizada conforme os elementos são adicionados ou removidos do DOM. Isso pode ser vantajoso ou potencialmente inesperado, dependendo do seu caso de uso.
-User
-Mais exemplos e códigos por favor, pelo menos 5 diversos
-ChatGPT
-Claro! Aqui estão cinco exemplos diferentes de uso do método `document.getElementsByClassName` para selecionar elementos por nome de classe:
+
+Aqui estão cinco exemplos diferentes de uso do método `document.getElementsByClassName` para selecionar elementos por nome de classe:
 
 Exemplo 1: Alterar a cor de fundo de todos os elementos de uma classe específica:
 
@@ -667,9 +545,9 @@ for (let i = 0; i < elementosTexto.length; i++) {
 ```
 
 Esses exemplos mostram várias maneiras de usar o método `document.getElementsByClassName` para selecionar elementos por nome de classe e realizar ações neles. Lembre-se de que a HTMLCollection retornada é indexada e você pode usar loops para iterar através dos elementos e realizar ações específicas.
-User
-document.getElementsByTagName(tagName) – selects all elements with the specified tag name. (em portugues). Aborde o trabalho com input, select, table, etc também
-ChatGPT
+
+## document.getElementsByTagName(tagName)
+
 O método `document.getElementsByTagName(tagName)` é usado para selecionar todos os elementos no documento que possuem a tag especificada. Ele retorna uma HTMLCollection ao vivo, que é uma coleção de todos os elementos correspondentes. Aqui está uma explicação em português, abordando também o trabalho com diferentes tipos de elementos:
 
 1. **document**: Refere-se a todo o documento HTML carregado no navegador.
@@ -755,49 +633,10 @@ Exemplo 5: Alterar a opção selecionada em um elemento de seleção (select):
 ```
 
 Esses exemplos mostram várias maneiras de usar o método `document.getElementsByTagName` para selecionar elementos por nome de tag e realizar ações neles. Lembre-se de que a HTMLCollection retornada é indexada, então você pode usar loops para iterar através dos elementos e realizar ações específicas para cada tipo de elemento.
-User
-Como pego pelo metodo anterior um input só com name="cpf"?
-ChatGPT
-Para selecionar um elemento `<input>` pelo atributo `name` usando o método `document.getElementsByName`, você pode fazer o seguinte:
 
-```javascript
-// Selecionar o input pelo atributo name
-const inputCPF = document.getElementsByName('cpf')[0];
 
-// Verificar se o input foi encontrado antes de usar
-if (inputCPF) {
-  // Agora você pode trabalhar com o elemento inputCPF
-  // Por exemplo, definir um valor para o campo:
-  inputCPF.value = '123.456.789-00';
-}
-```
+## element.matches(selector) 
 
-Nesse exemplo, `document.getElementsByName('cpf')` retorna uma NodeList contendo todos os elementos que têm o atributo `name` igual a "cpf". Como geralmente só há um elemento com o atributo `name` exclusivo, você pode acessá-lo pelo índice `[0]` da NodeList.
-
-Lembre-se de que, se você estiver trabalhando com vários elementos com o mesmo atributo `name`, como checkboxes ou radio buttons, a NodeList conterá todos esses elementos. Portanto, você precisaria iterar sobre a NodeList para trabalhar com cada elemento individualmente.
-User
-e como uso algo do tipo inpu['name']
-ChatGPT
-Se você deseja acessar um elemento `<input>` usando a propriedade `name` diretamente como uma chave do objeto `document`, você pode fazer o seguinte:
-
-```javascript
-// Selecionar o input pelo atributo name
-const inputCPF = document['cpf'];
-
-// Verificar se o input foi encontrado antes de usar
-if (inputCPF) {
-  // Agora você pode trabalhar com o elemento inputCPF
-  // Por exemplo, definir um valor para o campo:
-  inputCPF.value = '123.456.789-00';
-}
-```
-
-Nesse caso, estamos usando a chave `'cpf'` diretamente no objeto `document`, como se o `document` fosse um objeto que contém propriedades correspondentes aos atributos `name` dos elementos. No entanto, isso só funcionará se você já tiver um elemento com o atributo `name` definido como `'cpf'`.
-
-Lembre-se de que essa abordagem é menos comum e pode ser mais confusa em termos de manutenção do código. Usar métodos específicos como `getElementById`, `getElementsByClassName`, `getElementsByTagName` ou `querySelector` para selecionar elementos é mais legível e recomendado na maioria dos casos.
-User
-element.matches(selector) – returns a Boolean indicating whether the element matches the specified CSS selector. em portugues
-ChatGPT
 O método `element.matches(selector)` retorna um valor booleano indicando se o elemento corresponde ao seletor CSS especificado. Aqui está uma explicação em português:
 
 1. **element**: Refere-se ao elemento HTML que você deseja verificar.
@@ -823,10 +662,8 @@ if (elementoLink.matches('.link')) {
 Neste exemplo, `elementoLink.matches('.link')` verifica se o elemento selecionado corresponde ao seletor `.link`, ou seja, se ele tem a classe "link". Dependendo do resultado, a mensagem apropriada é exibida no console.
 
 O método `matches` é útil quando você deseja verificar se um elemento atende a um determinado critério de seleção antes de realizar ações específicas sobre ele.
-User
-Mais exemplos e códigos por favor, pelo menos 5 diversos
-ChatGPT
-Claro! Aqui estão cinco exemplos diferentes de uso do método `element.matches` para verificar se um elemento corresponde a um seletor CSS:
+
+Aqui estão cinco exemplos diferentes de uso do método `element.matches` para verificar se um elemento corresponde a um seletor CSS:
 
 Exemplo 1: Verificar se um elemento é um cabeçalho `<h1>`:
 
@@ -899,15 +736,14 @@ if (imagem.matches('img')) {
 ```
 
 Esses exemplos demonstram como você pode usar o método `element.matches` para verificar se um elemento corresponde a diferentes critérios de seleção. Isso pode ser útil para tomar decisões baseadas nas características do elemento antes de executar ações específicas.
-User
-Creating and Modifying Elements
-document.createElement(tagName) – creates a new element with the specified tag name. em português
-ChatGPT
+
+# Creating and Modifying Elements
+
+## document.createElement(tagName)
+
 `document.createElement(tagName)` – cria um novo elemento com o nome de tag especificado.
-User
-5 exemplos por favor
-ChatGPT
-Claro! Aqui estão cinco exemplos de como usar o método `document.createElement` para criar novos elementos:
+
+Aqui estão cinco exemplos de como usar o método `document.createElement` para criar novos elementos:
 
 Exemplo 1: Criar um novo parágrafo e adicioná-lo ao corpo do documento:
 
@@ -990,14 +826,13 @@ document.body.appendChild(novoLink);
 ```
 
 Esses exemplos demonstram como usar o método `document.createElement` para criar novos elementos HTML e personalizá-los antes de adicioná-los ao DOM.
-User
-Creating and Modifying Elements
-document.createElement(tagName) – creates a new element with the specified tag name. em portugues
-ChatGPT
+
+# Creating and Modifying Elements
+
+## document.createElement(tagName) 
+
 `document.createElement(tagName)` – cria um novo elemento com o nome de tag especificado.
-User
-5 exemplos por favor, diferente dos anteriores
-ChatGPT
+
 Claro! Aqui estão cinco exemplos adicionais de como usar o método `document.createElement` para criar novos elementos:
 
 Exemplo 1: Criar um novo elemento de cabeçalho e definir um estilo:
@@ -1089,9 +924,9 @@ document.body.appendChild(novaDiv);
 ```
 
 Esses exemplos demonstram como você pode criar elementos HTML dinamicamente usando `document.createElement` e personalizá-los de várias maneiras antes de adicioná-los ao DOM.
-User
-element.insertBefore(newElement, referenceElement) – inserts a new element before the specified reference element. em portugues e 5 exemplos bem variados
-ChatGPT
+
+## element.insertBefore(newElement, referenceElement) 
+
 `element.insertBefore(newElement, referenceElement)` – insere um novo elemento antes do elemento de referência especificado.
 
 Aqui estão cinco exemplos variados de como usar o método `insertBefore` para inserir um novo elemento antes de um elemento de referência:
@@ -1172,9 +1007,9 @@ for (let i = 0; i < elementosDestaque.length; i++) {
 ```
 
 Esses exemplos demonstram como usar o método `insertBefore` para inserir novos elementos HTML antes de elementos de referência específicos no DOM.
-User
-element.setAttribute(name, value) – sets the value of the specified attribute for an element. em portugues e 5  exemplos
-ChatGPT
+
+## element.setAttribute(name, value) 
+
 `element.setAttribute(name, value)` – define o valor do atributo especificado para um elemento.
 
 Aqui estão cinco exemplos de como usar o método `setAttribute` para definir valores de atributos específicos para elementos:
@@ -1230,9 +1065,9 @@ paragrafo.setAttribute('style', 'background-color: yellow; font-size: 16px;');
 ```
 
 Esses exemplos ilustram como usar o método `setAttribute` para definir valores de atributos em elementos HTML, o que pode ser útil ao manipular a estrutura, o comportamento e a aparência dos elementos no DOM.
-User
-element.removeAttribute(name) – removes the specified attribute from an element. em portugues e 5 exemplos
-ChatGPT
+
+## element.removeAttribute(name) 
+
 `element.removeAttribute(name)` – remove o atributo especificado de um elemento.
 
 Aqui estão cinco exemplos de como usar o método `removeAttribute` para remover atributos específicos de elementos:
@@ -1288,9 +1123,9 @@ paragrafo.removeAttribute('style');
 ```
 
 Esses exemplos demonstram como usar o método `removeAttribute` para remover atributos específicos de elementos HTML, o que pode ser útil ao manipular a estrutura, o comportamento e a aparência dos elementos no DOM.
-User
-element.innerHTML – sets or gets the HTML content of an element, em portugues e 5 exemplos
-ChatGPT
+
+## element.innerHTML 
+
 `element.innerHTML` – define ou obtém o conteúdo HTML de um elemento.
 
 Aqui estão cinco exemplos de como usar a propriedade `innerHTML` para definir ou obter o conteúdo HTML de elementos:
@@ -1348,9 +1183,9 @@ elemento.innerHTML = '';
 ```
 
 Esses exemplos demonstram como usar a propriedade `innerHTML` para manipular o conteúdo HTML de elementos, seja substituindo-o completamente, adicionando novos elementos ou obtendo seu conteúdo atual. Lembre-se de que ao usar `innerHTML`, você também pode estar suscetível a riscos de segurança, como injeção de código malicioso (XSS), portanto, é importante tomar precauções ao manipular o conteúdo HTML.
-User
-element.textContent – sets or gets the text content of an element, em portugues e 5 exemplos
-ChatGPT
+
+## element.textContent – sets or gets the text content of an element, em portugues e 5 exemplos
+
 `element.textContent` – define ou obtém o conteúdo de texto de um elemento.
 
 Aqui estão cinco exemplos de como usar a propriedade `textContent` para definir ou obter o conteúdo de texto de elementos:
@@ -1410,9 +1245,9 @@ elemento.textContent = '';
 ```
 
 Esses exemplos demonstram como usar a propriedade `textContent` para manipular o conteúdo de texto de elementos HTML, seja substituindo-o completamente, adicionando novo texto ou obtendo seu conteúdo atual. A principal diferença entre `textContent` e `innerHTML` é que `textContent` lida apenas com o conteúdo de texto, enquanto `innerHTML` lida com o conteúdo HTML, o que ajuda a evitar riscos de segurança associados à injeção de código malicioso (XSS).
-User
-element.insertAdjacentHTML(position, htmlString) – inserts HTML into the specified position relative to the element, em portugues e 5 exemplos
-ChatGPT
+
+## element.insertAdjacentHTML(position, htmlString)
+
 `element.insertAdjacentHTML(position, htmlString)` – insere HTML na posição especificada em relação ao elemento.
 
 Aqui estão cinco exemplos de como usar o método `insertAdjacentHTML` para inserir HTML em diferentes posições em relação a um elemento:
@@ -1468,9 +1303,9 @@ lista.insertAdjacentHTML('beforeend', '<li>Novo item 1</li><li>Novo item 2</li>'
 ```
 
 Esses exemplos demonstram como usar o método `insertAdjacentHTML` para inserir conteúdo HTML em diferentes posições em relação a um elemento. Isso oferece uma maneira flexível de manipular o DOM ao adicionar elementos HTML dinamicamente em posições específicas.
-User
-element.insertAdjacentText(position, text) – inserts text into the specified position relative to the element, em portugues e 5 exemplos
-ChatGPT
+
+## element.insertAdjacentText(position, text) – inserts text into the specified position relative to the element, em portugues e 5 exemplos
+
 `element.insertAdjacentText(position, text)` – insere texto na posição especificada em relação ao elemento.
 
 Aqui estão cinco exemplos de como usar o método `insertAdjacentText` para inserir texto em diferentes posições em relação a um elemento:
@@ -1526,18 +1361,18 @@ paragrafo.insertAdjacentText('beforeend', 'Texto adicional.');
 ```
 
 Esses exemplos demonstram como usar o método `insertAdjacentText` para inserir conteúdo de texto em diferentes posições em relação a um elemento. Isso oferece uma maneira flexível de manipular o DOM ao adicionar texto dinamicamente em posições específicas.
-User
 
-Mostre detalhamente o que cada um faz, com 5 exemplos de cada, em português. Nunca repita códigos e use muita criatividade nos códigos.
+## Mostre detalhamente o que cada um faz, com 5 exemplos de cada, em português. Nunca repita códigos e use muita criatividade nos códigos.
 
-Styling Elements
-element.style.property = value – sets a CSS property for an element.
-element.classList.add(className) – adds a class to an element.
-element.classList.remove(className) – removes a class from an element.
-element.classList.toggle(className) – toggles a class on or off for an element.
-element.classList.contains(className) – returns a Boolean value indicating whether an element has a specified class.
-window.getComputedStyle(element) – returns the computed style of an element.
-ChatGPT
+### Styling Elements
+
+* element.style.property = value – sets a CSS property for an element.
+* element.classList.add(className) – adds a class to an element.
+* element.classList.remove(className) – removes a class from an element.
+* element.classList.toggle(className) – toggles a class on or off for an element.
+* element.classList.contains(className) – returns a Boolean value indicating whether an element has a specified class.
+* window.getComputedStyle(element) – returns the computed style of an element.
+
 Certamente! Vou explicar detalhadamente cada um dos métodos de estilo e fornecer cinco exemplos criativos para cada um em português.
 
 **1. `element.style.property = value` – define uma propriedade CSS para um elemento.**
@@ -1703,7 +1538,7 @@ Exemplo 5: Remover uma classe de "oculto" de um elemento para revelá-lo.
 ```javascript
 const botaoMostrar = document.getElementById('botaoMostrar');
 const elementoOculto = document.getElementById('elementoO
-ChatGPT
+
 culto');
 
 botaoMostrar.addEventListener('click', () => {
@@ -1863,7 +1698,7 @@ if (tamanhoFonte === '16px') {
 
 Exemplo 3: Calcular a largura total de um elemento de div, incluindo margens e preenchimento.
 
-ChatGPT
+
 ```javascript
 const minhaDiv = document.querySelector('.minha-div');
 const estiloCalculado = window.getComputedStyle(minhaDiv);
@@ -1895,20 +1730,21 @@ console.log('Altura de linha:', alturaLinha);
 ```
 
 Esses exemplos detalham cada um dos métodos de estilo mencionados e mostram diferentes maneiras criativas de aplicá-los em situações do mundo real. O uso desses métodos permite manipular a aparência e o comportamento dos elementos no DOM, proporcionando uma experiência interativa e agradável aos usuários.
-User
-Mostre detalhamente o que cada um faz, com 5 exemplos de cada, em português. Nunca repita códigos e use muita criatividade nos códigos.
 
-Event Handling
-element.addEventListener(event, function) – adds an event listener to an element.
-element.removeEventListener(event, function) – removes an event listener from an element.
-event.preventDefault() – prevents the default action of an event.
-event.stopPropagation() – stops the propagation of an event to parent elements.
-event.target – returns the element that triggered the event.
-event.currentTarget – returns the element to which the event listener is attached.
-event.type – returns the type of the event.
-event.key – returns the key that was pressed (for keyboard events).
-event.keyCode – returns the Unicode value of the key that was pressed (for keyboard events).
-ChatGPT
+### Mostre detalhamente o que cada um faz, com 5 exemplos de cada, em português. Nunca repita códigos e use muita criatividade nos códigos.
+
+### Event Handling
+
+* element.addEventListener(event, function) – adds an event listener to an element.
+* element.removeEventListener(event, function) – removes an event listener from an element.
+* event.preventDefault() – prevents the default action of an event.
+* event.stopPropagation() – stops the propagation of an event to parent elements.
+* event.target – returns the element that triggered the event.
+* event.currentTarget – returns the element to which the event listener is attached.
+* event.type – returns the type of the event.
+* event.key – returns the key that was pressed (for keyboard events).
+* event.keyCode – returns the Unicode value of the key that was pressed (for keyboard events).
+
 Com certeza! Vou explicar detalhadamente cada um dos métodos de manipulação de eventos e fornecer cinco exemplos criativos para cada um em português.
 
 **1. `element.addEventListener(event, function)` – adiciona um ouvinte de evento a um elemento.**
@@ -2139,7 +1975,7 @@ campoEntrada.addEventListener('keydown', (event) => {
 });
 
 document.addEventListener('keydown
-ChatGPT
+
 ', () => {
   console.log('Tecla pressionada no documento.');
 });
@@ -2362,7 +2198,7 @@ campoSelecao.addEventListener('change', (event) => {
 ```
 
 **8.
-ChatGPT
+
  `event.key` – retorna a tecla que foi pressionada (para eventos de teclado).**
 
 Esse atributo retorna uma string que representa a tecla que foi pressionada em eventos de teclado.
@@ -2484,7 +2320,7 @@ element.previousSibling – returns the previous sibling node of an element.
 element.nextSibling – returns the next sibling node of an element.
 element.parentElement – returns the parent element of an element (excluding text and comment nodes).
 element.children – returns a collection of all child elements of an element (excluding text and comment nodes).
-ChatGPT
+
 Claro! Vou explicar detalhadamente cada um dos métodos de navegação (traversal) e fornecer cinco exemplos criativos para cada um em português.
 
 **1. `element.parentNode` – retorna o nó pai de um elemento.**
@@ -2713,7 +2549,7 @@ const ultimoNodo = elemento.lastChild;
 
 if (ultimoNodo.nodeType === Node.TEXT_NODE) {
   console.log('O último nó é um nó de texto.');
-ChatGPT
+
 }
 ```
 
@@ -2888,7 +2724,7 @@ links.forEach(link => {
 Esse método retorna uma coleção HTMLCollection de todos os elementos filhos de um elemento, excluindo nós de texto e comentários.
 
 Exemplo 1: Contar o número total de elementos
-ChatGPT
+
  filhos em um elemento de lista.
 
 ```javascript
@@ -2954,7 +2790,7 @@ element.propertyName – sets or gets the value of a property for an element.
 element.dataset – returns a DOMStringMap containing all the custom data attributes of an element.
 element.hasAttribute(name) – returns a Boolean indicating whether an element has the specified attribute.
 element.propertyName = value – sets the value of a property for an element.
-ChatGPT
+
 **1. `element.getAttribute(name)` – retorna o valor do atributo especificado de um elemento.**
 
 Esse método retorna o valor do atributo especificado de um elemento, onde `name` é o nome do atributo desejado.
@@ -3126,7 +2962,7 @@ checkbox.checked = true;
 ```
 
 **5. `element.dataset`
-ChatGPT
+
  – retorna um DOMStringMap contendo todos os atributos de dados personalizados de um elemento.**
 
 Esse método retorna um objeto `DOMStringMap` que contém todos os atributos de dados personalizados (começando com "data-") de um elemento.
@@ -3268,7 +3104,7 @@ element.removeChild(childElement) – removes a child element from the parent el
 element.replaceChild(newElement, oldElement) – replaces an old child element with a new child element.
 element.contains(childElement) – returns a Boolean indicating whether an element is a descendant of another element.
 document.importNode(node, deep) – imports a node from another document into the current document.
-ChatGPT
+
 **1. `document.createDocumentFragment()` – cria um novo fragmento de documento vazio.**
 
 Esse método cria um novo fragmento de documento vazio, que pode ser usado para realizar operações eficientes fora da árvore do DOM principal.
@@ -3405,7 +3241,7 @@ const paragrafoClone = paragrafoOriginal.cloneNode();
 paragrafoClone.setAttribute('data-info', 'clonado');
 
 paragrafoOriginal.parentNode
-ChatGPT
+
 .insertBefore(paragrafoClone, paragrafoOriginal.nextSibling);
 ```
 
@@ -3621,7 +3457,7 @@ const outroFragmento = outroDocumento.document.createDocumentFragment();
 
 for (let i = 1; i <= 3; i++) {
   const novoItem = outro
-ChatGPT
+
 Documento.document.createElement('li');
   novoItem.textContent = `Item ${i}`;
   outroFragmento.appendChild(novoItem);
@@ -3683,7 +3519,7 @@ element.offsetWidth – returns the width of an element, including padding and b
 element.offsetHeight – returns the height of an element, including padding and border but not margin.
 element.offsetLeft – returns the distance between an element’s left edge and its offset parent’s left edge.
 element.offsetTop – returns the distance between an element’s top edge and its offset parent’s top edge.
-ChatGPT
+
 **1. `requestAnimationFrame(callback)` – agenda uma função para ser executada na próxima renderização de quadro pelo navegador, normalmente a 60 quadros por segundo.**
 
 Esse método permite agendar a execução de uma função para ser realizada antes da próxima renderização do quadro da página, otimizando a animação e evitando a perda de desempenho.
@@ -3910,7 +3746,7 @@ function fazerRequisicao() {
   window.performance.mark('fimRequisicao');
 
   window.performance.measure('requis
-ChatGPT
+
 icaoMedida', 'inicioRequisicao', 'fimRequisicao');
   const medida = window.performance.getEntriesByName('requisicaoMedida')[0];
   console.log('Tempo de requisição:', medida.duration + 'ms');
@@ -4120,7 +3956,7 @@ botao.addEventListener('click', () => {
 Esse atributo retorna a distância horizontal entre a borda esquerda de um elemento e a borda esquerda de seu elemento pai deslocado.
 
 Exemplo 1: Obter a dist
-ChatGPT
+
 ância entre a borda esquerda de um elemento e seu elemento pai.
 
 ```javascript
@@ -4248,7 +4084,7 @@ elementoPosicionar.style.top = offsetReferencia + 20 + 'px';
 ```
 User
 Acabou?
-ChatGPT
+
 Sim, por enquanto, forneci informações detalhadas sobre vários tópicos relacionados à manipulação do DOM, otimização de desempenho e muito mais. Se você tiver mais perguntas ou precisar de assistência adicional, não hesite em perguntar! Estou aqui para ajudar.
 User
 Mostre detalhamente o que cada um faz, com 5 exemplos de cada, em português. Nunca repita códigos e use muita criatividade nos códigos.
@@ -4259,7 +4095,7 @@ window.location – sets or gets the current URL of the window.
 window.navigator – returns an object containing information about the user’s browser and operating system.
 window.alert(message) – displays an alert dialog with the specified message.
 window.prompt(message, defaultValue) – displays a prompt dialog with the specified message and default value.
-ChatGPT
+
 **Métodos e Propriedades Adicionais**
 Nesta seção, exploraremos mais métodos e propriedades para interagir com o documento, obter informações do navegador e exibir diálogos interativos. Vamos dar uma olhada detalhada em cada um deles, juntamente com cinco exemplos criativos para cada um:
 
@@ -4485,7 +4321,7 @@ console.log('Resposta:', resposta);
 
 Exemplo 2: Usar um valor padrão no prompt.
 
-ChatGPT
+
 ```javascript
 const corFavorita = window.prompt('Qual é a sua cor favorita?', 'Azul');
 console.log('Cor Favorita:', corFavorita);
@@ -4521,7 +4357,7 @@ setTimeout(() => {
 Esses exemplos fornecem uma visão abrangente dos métodos e propriedades adicionais que você pode utilizar para interagir com o documento, obter informações do navegador e exibir diálogos interativos em JavaScript. Sinta-se à vontade para adaptar e incorporar esses conceitos em suas próprias aplicações!
 User
 Existe mais alguma coisa relacionada a DOM que não foi vista?
-ChatGPT
+
 Sim, há muitos outros aspectos e recursos relacionados ao Document Object Model (DOM) que não foram abordados nas seções anteriores. O DOM é uma parte vasta e poderosa do desenvolvimento web, e há ainda mais tópicos que você pode explorar. Algumas áreas adicionais incluem:
 
 1. **Manipulação de Estilos CSS**: Além das propriedades de estilo direto no elemento (como `element.style.property`), você também pode usar a propriedade `element.classList` para adicionar, remover ou alternar classes CSS. Isso é útil para aplicar estilos e animações em elementos.
@@ -4547,7 +4383,7 @@ Sim, há muitos outros aspectos e recursos relacionados ao Document Object Model
 Lembre-se de que esta lista não é exaustiva e que o desenvolvimento web é um campo em constante evolução. Explorar mais sobre o DOM e suas capacidades permitirá que você crie aplicativos web mais ricos e interativos.
 User
 Mostre 3 exemplos de códigos de cada um citado acima
-ChatGPT
+
 Claro! Aqui estão três exemplos de códigos para cada um dos tópicos adicionais mencionados:
 
 **1. Manipulação de Estilos CSS:**
@@ -4743,87 +4579,4 @@ Exemplo 3: Alterar cor de fundo com transição.
 
 Esses exemplos fornecem um vislumbre das possibilidades oferecidas por cada um dos tópicos mencionados. Você pode explorar esses conceitos mais a fundo e aplicá-los em suas próprias criações web.
 
-Acesse alguns exercícios [aqui](https://mervy.github.io/js-dom/pages/exercises1) e outros [aqui](https://mervy.github.io/js-dom/pages/exercises2)
-
-
-**Resumão das Principais Técnicas de Manipulação do DOM:**
-
-1. Seleção de Elementos:
-   - `document.querySelector(selector)` – Seleciona o primeiro elemento que corresponde ao seletor CSS.
-   - `document.querySelectorAll(selector)` – Seleciona todos os elementos que correspondem ao seletor CSS.
-   - `document.getElementById(id)` – Seleciona o elemento com o ID especificado.
-   - `document.getElementsByClassName(className)` – Seleciona todos os elementos com a classe especificada.
-   - `document.getElementsByTagName(tagName)` – Seleciona todos os elementos com a tag especificada.
-
-2. Criação e Modificação de Elementos:
-   - `document.createElement(tagName)` – Cria um novo elemento com a tag especificada.
-   - `element.appendChild(child)` – Adiciona um elemento filho ao final do elemento pai.
-   - `element.insertBefore(newElement, referenceElement)` – Insere um novo elemento antes do elemento de referência.
-   - `element.setAttribute(name, value)` – Define o valor do atributo especificado para um elemento.
-   - `element.removeAttribute(name)` – Remove o atributo especificado de um elemento.
-   - `element.innerHTML` – Define ou obtém o conteúdo HTML de um elemento.
-   - `element.textContent` – Define ou obtém o conteúdo de texto de um elemento.
-   - `element.insertAdjacentHTML(position, htmlString)` – Insere HTML na posição especificada em relação ao elemento.
-   - `element.insertAdjacentText(position, text)` – Insere texto na posição especificada em relação ao elemento.
-
-3. Manipulação de Estilos e Classes:
-   - `element.style.property = value` – Define uma propriedade CSS para um elemento.
-   - `element.classList.add(className)` – Adiciona uma classe a um elemento.
-   - `element.classList.remove(className)` – Remove uma classe de um elemento.
-   - `element.classList.toggle(className)` – Alterna uma classe em um elemento.
-   - `element.classList.contains(className)` – Verifica se um elemento possui uma classe.
-   - `window.getComputedStyle(element)` – Obtém o estilo computado de um elemento.
-
-4. Event Handling:
-   - `element.addEventListener(event, function)` – Adiciona um ouvinte de evento a um elemento.
-   - `element.removeEventListener(event, function)` – Remove um ouvinte de evento de um elemento.
-   - `event.preventDefault()` – Previne a ação padrão de um evento.
-   - `event.stopPropagation()` – Interrompe a propagação de um evento aos elementos pai.
-   - `event.target` – Retorna o elemento que acionou o evento.
-   - `event.currentTarget` – Retorna o elemento ao qual o ouvinte de evento está anexado.
-   - `event.type` – Retorna o tipo do evento.
-   - `event.key` – Retorna a tecla pressionada (para eventos de teclado).
-   - `event.keyCode` – Retorna o valor Unicode da tecla pressionada (para eventos de teclado).
-
-5. Traversal:
-   - `element.parentNode` – Retorna o nó pai de um elemento.
-   - `element.childNodes` – Retorna uma coleção de todos os nós filhos de um elemento.
-   - `element.firstChild` – Retorna o primeiro nó filho de um elemento.
-   - `element.lastChild` – Retorna o último nó filho de um elemento.
-   - `element.previousSibling` – Retorna o nó irmão anterior de um elemento.
-   - `element.nextSibling` – Retorna o próximo nó irmão de um elemento.
-   - `element.parentElement` – Retorna o elemento pai de um elemento (excluindo nós de texto e comentários).
-   - `element.children` – Retorna uma coleção de todos os elementos filhos de um elemento (excluindo nós de texto e comentários).
-
-6. Atributos e Propriedades:
-   - `element.getAttribute(name)` – Retorna o valor do atributo especificado de um elemento.
-   - `element.setAttribute(name, value)` – Define o valor do atributo especificado para um elemento.
-   - `element.removeAttribute(name)` – Remove o atributo especificado de um elemento.
-   - `element.propertyName` – Define ou obtém o valor de uma propriedade para um elemento.
-   - `element.dataset` – Retorna um DOMStringMap contendo todos os atributos de dados personalizados de um elemento.
-   - `element.hasAttribute(name)` – Retorna um valor Boolean indicando se um elemento possui o atributo especificado.
-   - `element.propertyName = value` – Define o valor de uma propriedade para um elemento.
-
-7. Performance Optimization:
-   - `requestAnimationFrame(callback)` – Agenda uma função para ser executada na próxima renderização do navegador.
-   - `window.performance.mark(name)` – Cria uma marca de desempenho com o nome especificado.
-   - `window.performance.measure(name, startMark, endMark)` – Cria uma medida de desempenho com o nome especificado, usando as marcas de início e fim.
-   - `element.getBoundingClientRect()` – Retorna um objeto DOMRect contendo o tamanho e a posição de um elemento.
-   - `element.offsetWidth` – Retorna a largura de um elemento, incluindo padding e borda, mas não a margem.
-   - `element.offsetHeight` – Retorna a altura de um elemento, incluindo padding e borda, mas não a margem.
-   - `element.offsetLeft` – Retorna a distância entre a borda esquerda de um elemento e a borda esquerda do seu elemento pai de deslocamento.
-   - `element.offsetTop` – Retorna a distância entre a borda superior de um elemento e a borda superior do seu elemento pai de deslocamento.
-
-**Motivação para o Estudo:**
-
-Dominar a manipulação do DOM é uma habilidade fundamental para qualquer desenvolvedor web. Com essas técnicas, você pode criar sites interativos, dinâmicos e responsivos, tornando a experiência do usuário mais envolvente. O estudo da manipulação do DOM é uma jornada empolgante e recompensadora que oferece uma ampla gama de possibilidades criativas.
-
-Imagine a satisfação de criar interfaces incríveis, animações suaves, formulários inteligentes e interações envolventes, tudo isso através do seu próprio código. Cada linha de código que você escreve tem o poder de transformar ideias em realidade na web.
-
-Lembre-se de que a prática constante é fundamental. À medida que você enfrenta desafios e cria projetos, você solidifica seu conhecimento e aprimora suas habilidades. Não tenha medo de experimentar, errar e aprender com seus erros. A comunidade de desenvolvimento web é vasta e acolhedora, oferecendo recursos e suporte para ajudá-lo em sua jornada.
-
-Então, mantenha-se motivado, continue explorando, pratique e crie coisas incríveis. Seja curioso, ousado e persistente. Com dedicação
-ChatGPT
-, você poderá desbloquear oportunidades emocionantes e contribuir para a construção de um mundo digital cada vez mais interativo e cativante.
-
-Aproveite a jornada e nunca subestime o poder das suas mãos para moldar a web! 🚀🌟
+Acesse alguns exercícios [aqui](https://mervy.github.io/javascript-working-with-dom/pages/exercises1), [aqui](https://mervy.github.io/javascript-working-with-dom/pages/exercises2) e [aqui](https://mervy.github.io/javascript-working-with-dom/pages/exercises3)

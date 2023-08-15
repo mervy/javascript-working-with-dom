@@ -1,4 +1,4 @@
-<img src="javascript-logo.png" alt="JS logo" style="width:100px;"/> 
+<img src="../javascript-logo.png" alt="JS logo" style="height:70px;"/> 
 | [Home](https://mervy.github.io/javascript-working-with-dom) 
 | [Exercises 01](https://mervy.github.io/javascript-working-with-dom/pages/exercises1) 
 | [Exercises 02](https://mervy.github.io/javascript-working-with-dom/pages/exercises2) 
