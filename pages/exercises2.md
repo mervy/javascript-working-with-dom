@@ -1,4 +1,8 @@
-[<img src="https://cdn-icons-png.flaticon.com/512/25/25694.png" alt="" width="50" align="center">](https://mervy.github.io/js-dom/)   [<img  src="https://icons.veryicon.com/png/o/business/monochrome-financial-and-business-icons/to-work-in-an-office-2.png"  alt=""  width="50" align="center">](https://mervy.github.io/js-dom/pages/exercises1) [<img  src="https://static.thenounproject.com/png/94973-200.png"  alt=""  width="50" align="center">](https://mervy.github.io/js-dom/pages/exercises2) [<img  src="https://icons.veryicon.com/png/o/business/monochrome-financial-and-business-icons/to-work-in-an-office-2.png"  alt=""  width="50" align="center">](https://mervy.github.io/js-dom/pages/exercises3)
+<img src="javascript-logo.png" alt="JS logo" style="width:100px;"/> 
+| [Home](https://mervy.github.io/javascript-working-with-dom) 
+| [Exercises 01](https://mervy.github.io/javascript-working-with-dom/pages/exercises1) 
+| [Exercises 02](https://mervy.github.io/javascript-working-with-dom/pages/exercises2) 
+| [Exercises 03](https://mervy.github.io/javascript-working-with-dom/pages/exercises3) 
 
 Agora mais 50 exercícios mais difíceis mas que envolvam todo os conteudos abordados
 
@@ -102,4 +106,4 @@ Claro, aqui estão 50 exercícios mais desafiadores que abrangem os conteúdos a
 
 Estes exercícios abordam todos os tópicos que discutimos até agora e são projetados para serem mais desafiadores. Sinta-se à vontade para experimentar e adaptar os códigos para testar suas habilidades de desenvolvimento web. Se tiver alguma dúvida ou precisar de mais orientações, estou aqui para ajudar!
 
-Soluções [clique aqui](https://mervy.github.io/js-dom/pages/solutions2)
+Soluções [clique aqui](https://mervy.github.io/javascript-working-with-dom/pages/solutions2)

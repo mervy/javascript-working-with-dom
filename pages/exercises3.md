@@ -1,4 +1,8 @@
-[<img src="https://cdn-icons-png.flaticon.com/512/25/25694.png" alt="" width="50" align="center">](https://mervy.github.io/js-dom/)   [<img  src="https://icons.veryicon.com/png/o/business/monochrome-financial-and-business-icons/to-work-in-an-office-2.png"  alt=""  width="50" align="center">](https://mervy.github.io/js-dom/pages/exercises1) [<img  src="https://static.thenounproject.com/png/94973-200.png"  alt=""  width="50" align="center">](https://mervy.github.io/js-dom/pages/exercises2) [<img  src="https://icons.veryicon.com/png/o/business/monochrome-financial-and-business-icons/to-work-in-an-office-2.png"  alt=""  width="50" align="center">](https://mervy.github.io/js-dom/pages/exercises3)
+<img src="javascript-logo.png" alt="JS logo" style="width:100px;"/> 
+| [Home](https://mervy.github.io/javascript-working-with-dom) 
+| [Exercises 01](https://mervy.github.io/javascript-working-with-dom/pages/exercises1) 
+| [Exercises 02](https://mervy.github.io/javascript-working-with-dom/pages/exercises2) 
+| [Exercises 03](https://mervy.github.io/javascript-working-with-dom/pages/exercises3) 
 
 ## Exercícios
 
@@ -68,5 +72,5 @@ Solução [clique aqui](https://mervy.github.io/js-dom/pages/solutions3)
 No 1º cenário, antes de estar logado, o visitante se depara com o formulário de login ou de criação de usuário. Se for feito o login com sucesso, o componente deve levar ao cenário 2, se falhar ele deve alertar o usuário e voltar ao início do cenário 1. Se o usuário optar por criar um usuário, o componente deve criar o registro de um novo usuário e voltar para início do cenário 1.
 No cenário 2, após logado, mostrar apenas um texto de logado no componente e um botão (ou link) para deslogar, retornando ao início do cenário 1. Deve ser possível criar múltiplos usuários e, se fechada, a página não pode perder os registros de usuários  armazenados.
 
-Solução [clique aqui](https://mervy.github.io/js-dom/pages/solutions3)
+Solução [clique aqui](https://mervy.github.io/javascript-working-with-dom/pages/solutions3)
 
