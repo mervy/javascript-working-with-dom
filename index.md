@@ -293,6 +293,70 @@ images.forEach(image => {
 });
 ```
 
+Exemplo 6: Aqui está um exemplo de HTML e JavaScript que cria uma lista de perguntas e respostas, onde você pode clicar nas perguntas para revelar as respostas e, ao clicar em outra pergunta, a resposta anterior será escondida:
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  .pergunta {
+    cursor: pointer;
+    font-weight: bold;
+  }
+
+  .resposta {
+    display: none;
+    margin-left: 10px;
+  }
+</style>
+</head>
+<body>
+
+<ul id="perguntas">
+  <li>
+    <div class="pergunta">Pergunta 01 - Ver a resposta</div>
+    <div class="resposta">Resposta 01</div>
+  </li>
+  <li>
+    <div class="pergunta">Pergunta 02 - Ver a resposta</div>
+    <div class="resposta">Resposta 02</div>
+  </li>
+  <li>
+    <div class="pergunta">Pergunta 03 - Ver a resposta</div>
+    <div class="resposta">Resposta 03</div>
+  </li>
+  <li>
+    <div class="pergunta">Pergunta 04 - Ver a resposta</div>
+    <div class="resposta">Resposta 04</div>
+  </li>
+  <li>
+    <div class="pergunta">Pergunta 05 - Ver a resposta</div>
+    <div class="resposta">Resposta 05</div>
+  </li>
+</ul>
+
+<script>
+  const perguntas = document.querySelectorAll('.pergunta');
+
+  perguntas.forEach(pergunta => {
+    pergunta.addEventListener('click', () => {
+      const resposta = pergunta.nextElementSibling;
+      if (resposta.style.display === 'none') {
+        resposta.style.display = 'block';
+      } else {
+        resposta.style.display = 'none';
+      }
+    });
+  });
+</script>
+
+</body>
+</html>
+```
+
+Neste exemplo, usamos classes CSS para estilizar as perguntas e respostas. O JavaScript adiciona um ouvinte de evento de clique para cada pergunta. Quando uma pergunta é clicada, ele procura o elemento irmão seguinte (a resposta) e alterna sua visibilidade entre "block" e "none". Isso permite que você clique na pergunta para revelar ou esconder a resposta correspondente.
+
 Esses exemplos demonstram várias maneiras pelas quais o método `document.querySelectorAll` pode ser usado para selecionar e interagir com elementos em uma página da web. Lembre-se de que essa função é uma ferramenta poderosa para manipular o DOM e realizar ações em vários elementos de uma só vez.
 
 ## document.getElementById(id) 
