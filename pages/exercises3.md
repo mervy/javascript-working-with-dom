@@ -60,7 +60,7 @@ Use o número para calcular o fatorial dele e mostrá-lo na tela. Além disso, q
 - Armazene a nota do aluno como uma variável privada do tipo symbol, use getters e setters para recuperar a informação.  
 - Os registros devem ser armazenados em um array;  
 
-*** A impressão do relatório deve ter:  ***
+*A impressão do relatório deve ter:*
 
 - Um título;  
 - Os resultados mostrados linha a linha no formato “Aluno Nº ?? – Nota ?? \[(A/RE)PROVADO\]”; e  
